@@ -104,8 +104,8 @@ public class MainActivity extends AppCompatActivity {
         mTextViewResult = findViewById(R.id.myjson);
         OkHttpClient client = new OkHttpClient();
         //String url = "http://192.168.43.33:8080/geoserver/topp/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=topp:tasmania_cities&maxFeatures=1&outputFormat=application%2Fjson";
-        //String url = "https://mapping.pajak.go.id/geoserver/topp/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=topp%3Astates&maxFeatures=1&outputFormat=application%2Fjson";
-        String url = "https://mapping.pajak.go.id/proximity_app/JsonService/getpoint/bynip?_nip=197103081992031002";
+        //String url = "https://SECRET-DOMAIN/geoserver/topp/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=topp%3Astates&maxFeatures=1&outputFormat=application%2Fjson";
+        String url = "https://SECRET-DOMAIN/proximity_app/JsonService/getpoint/bynip?_nip=197103081992031002";
         Request request = new Request.Builder()
                 .url(url)
                 .build();
